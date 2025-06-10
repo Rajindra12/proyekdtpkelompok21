@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumon - Informasi Pendaftaran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      .wavy-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      .wavy-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        background: url('data:image/svg+xml;utf8,<svg width="100" height="10" viewBox="0 0 100 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5 C10 0 20 10 30 5 C40 0 50 10 60 5 C70 0 80 10 90 5 C100 0 110 10 120 5" stroke="%23FFD600" stroke-width="5"/></svg>')
+          repeat-x bottom;
+        background-size: 30px 10px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <header class="border-b border-gray-200">
+      <nav
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            alt="KUMON Pondok Mutiara logo"
+            class="h-10 w-auto"
+            src="Gambar/kumon.pondok.mutiara.biru.png"
+            width="120"
+            height="40"
+          />
+        </div>
+        <ul class="hidden md:flex space-x-10 text-sm font-normal">
+          <li>
+            <a class="hover:text-[#14B8FF]" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="program.html">Program</a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pencapaian.html"
+              >Pencapaian</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-[#14B8FF] border-b-2 border-[#14B8FF] pb-1"
+              href="pendaftaran.html"
+              aria-current="page"
+            >
+              Informasi pendaftaran
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="relative bg-[#14B8FF] text-white pt-12 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex flex-col md:flex-row items-center justify-between pb-20 md:pb-28"
+      >
+        <div class="md:w-1/2 mb-8 md:mb-0 z-10">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Informasi Pendaftaran
+          </h1>
+          <p class="text-xl mb-6">
+            Bergabunglah dengan program Kumon untuk mengembangkan potensi anak
+            Anda.
+          </p>
+          <a
+            href="#program"
+            class="bg-[#FFD600] text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors inline-block"
+          >
+            Lihat Program
+          </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center z-10">
+          <div
+            class="w-72 h-72 bg-white bg-opacity-20 rounded-full flex items-center justify-center"
+          >
+            <div class="text-6xl">👦</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full leading-none"
+        style="transform: translateY(1px)"
+      >
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          class="block w-full"
+          fill="#FFFFFF"
+        >
+          <path d="M0,80 Q360,0 720,30 T1440,10 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-10 pb-20">
+      <section id="program" class="py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
+          >
+            Program Kumon
+          </h2>
+          <p
+            class="mt-4 text-center mb-16 max-w-2xl mx-auto text-base font-bold"
+          >
+            Pilih program sesuai kebutuhan anak Anda, termasuk materi, bimbingan
+            instruktur, dan laporan perkembangan.
+          </p>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-left">
+            <h3 class="text-2xl font-bold mb-8 text-center text-black">
+              Pilih Program Kumon
+            </h3>
+
+            <div
+              class="border-2 border-blue-500 rounded-lg p-6 mb-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="flex items-start mb-4">
+                <div class="bg-blue-200 p-3 rounded-lg text-blue-500 mr-4">
+                  <i class="fas fa-calculator text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2 text-black">
+                    Program Matematika
+                  </h4>
+                  <p class="text-gray-700 font-bold">
+                    Mengembangkan kemampuan berhitung dan pemecahan masalah
+                  </p>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-bold text-gray-800"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-blue-500 mr-2"></i>2x per
+                  minggu
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-blue-500 mr-2"></i>Lembar
+                  kerja harian
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-blue-500 mr-2"></i
+                  >Bimbingan personal
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-blue-500 mr-2"></i>Laporan
+                  perkembangan
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border-2 border-yellow-400 rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="flex items-start mb-4">
+                <div class="bg-yellow-100 p-3 rounded-lg text-yellow-500 mr-4">
+                  <i class="fas fa-book-open text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2 text-black">
+                    Program Bahasa
+                  </h4>
+                  <p class="text-gray-700 font-bold">
+                    Mencakup Bahasa Indonesia dan Bahasa Inggris untuk
+                    meningkatkan literasi
+                  </p>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-bold text-gray-800"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-yellow-500 mr-2"></i>2x per
+                  minggu
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-yellow-500 mr-2"></i
+                  >Reading & writing
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-yellow-500 mr-2"></i
+                  >Grammar & vocabulary
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-yellow-500 mr-2"></i
+                  >Bimbingan personal
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="harga" class="py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
+          >
+            Paket & Harga
+          </h2>
+          <p
+            class="mt-4 text-center mb-12 max-w-2xl mx-auto text-base font-bold"
+          >
+            Investasi terbaik untuk masa depan anak Anda dengan harga yang
+            terjangkau.
+          </p>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-8 text-left">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="bg-blue-200 p-3 rounded-lg text-blue-500 mr-4">
+                  <i class="fas fa-user-plus text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-black">
+                  Biaya Pendaftaran (Sekali Bayar)
+                </h4>
+              </div>
+              <span class="font-bold text-2xl text-blue-600">Rp 350.000</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div
+              class="bg-white border-2 border-blue-500 rounded-lg p-8 hover:shadow-xl transition-shadow text-center"
+            >
+              <h4 class="text-xl font-bold mb-2 text-black">
+                Biaya SPP per Bulan
+              </h4>
+              <h5 class="font-bold text-2xl mb-4 text-gray-700">TK / SD</h5>
+              <div
+                class="bg-[#14B8FF] text-white py-4 px-6 rounded-lg text-xl font-bold"
+              >
+                Rp 460.000,-
+              </div>
+            </div>
+
+            <div
+              class="bg-white border-2 border-blue-500 rounded-lg p-8 hover:shadow-xl transition-shadow text-center"
+            >
+              <h4 class="text-xl font-bold mb-2 text-black">
+                Biaya SPP per Bulan
+              </h4>
+              <h5 class="font-bold text-2xl mb-4 text-gray-700">SMP / SMA</h5>
+              <div
+                class="bg-[#14B8FF] text-white py-4 px-6 rounded-lg text-xl font-bold"
+              >
+                Rp 510.000,-
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" class="py-16 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
+          >
+            Daftar Sekarang
+          </h2>
+          <p class="text-base font-bold mt-4 mb-8 max-w-2xl mx-auto">
+            Siap untuk memulai perjalanan belajar yang luar biasa? Hubungi kami
+            sekarang untuk informasi lebih lanjut dan pendaftaran.
+          </p>
+
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#FFD600] text-black font-bold py-3 px-8 rounded-lg inline-flex items-center justify-center text-lg hover:bg-yellow-500 transition-colors"
+          >
+            <i class="fab fa-whatsapp mr-3 text-xl"></i>
+            Pendaftaran via WhatsApp
+          </a>
+
+          <div
+            class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800 font-bold"
+          >
+            <div class="text-center">
+              <div
+                class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-blue-500 text-2xl"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4 class="mb-2">Lokasi</h4>
+              <p class="font-normal text-gray-600">
+                Jl. Contoh No. 123<br />Sidoarjo
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-blue-500 text-2xl"
+              >
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4 class="mb-2">Telepon</h4>
+              <p class="font-normal text-gray-600">+62 812-3456-7890</p>
+            </div>
+            <div class="text-center">
+              <div
+                class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-blue-500 text-2xl"
+              >
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4 class="mb-2">Jam Operasional</h4>
+              <p class="font-normal text-gray-600">
+                Senin - Sabtu<br />08:00 - 17:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wave-bg text-white mt-20 pt-32 pb-16 relative">
+      <div class="absolute top-0 left-0 right-0 transform -translate-y-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="w-full"
+        >
+          <path
+            fill="#00AEEF"
+            fill-opacity="1"
+            d="M0,96L80,112C160,128,320,160,480,160C640,160,800,128,960,128C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div
+              class="bg-blue-500 text-white px-4 py-2 rounded font-bold text-xl mb-4 inline-block"
+            >
+              KUMON
+            </div>
+            <p class="text-sm">
+              Kumon membantu mengembangkan potensi setiap anak melalui metode
+              pembelajaran yang terbukti efektif.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold mb-4">Program</h5>
+            <ul class="space-y-2">
+              <li>
+                <a href="#program" class="hover:underline transition-colors"
+                  >Matematika</a
+                >
+              </li>
+              <li>
+                <a href="#program" class="hover:underline transition-colors"
+                  >Bahasa Indonesia</a
+                >
+              </li>
+              <li>
+                <a href="#program" class="hover:underline transition-colors"
+                  >Bahasa Inggris</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-4">Kontak</h5>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="https://wa.me/6281234567890"
+                  class="hover:underline transition-colors"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline transition-colors"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline transition-colors"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@kumon.co.id"
+                  class="hover:underline transition-colors"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-4">Informasi</h5>
+            <ul class="space-y-2">
+              <li>
+                <a href="#harga" class="hover:underline transition-colors"
+                  >Harga</a
+                >
+              </li>
+              <li>
+                <a href="#program" class="hover:underline transition-colors"
+                  >Metode</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="hover:underline transition-colors"
+                  >Lokasi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-cyan-300 mt-8 pt-8 text-center">
+          <p>&copy; 2024 Kumon. Semua hak dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

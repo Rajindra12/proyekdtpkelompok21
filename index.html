@@ -1,0 +1,394 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Kumon Pondok Mutiara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      /* Custom wavy underline (modified to be bigger) */
+      .wavy-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px; /* Increased from 8px */
+      }
+      .wavy-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10px; /* Increased from 8px */
+        background: url('data:image/svg+xml;utf8,<svg width="100" height="10" viewBox="0 0 100 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5 C10 0 20 10 30 5 C40 0 50 10 60 5 C70 0 80 10 90 5 C100 0 110 10 120 5" stroke="%23FFD600" stroke-width="5"/></svg>')
+          repeat-x bottom;
+        background-size: 30px 10px; /* Height adjusted */
+        pointer-events: none;
+      }
+      /* Thicker top border for cards */
+      .card-top-border {
+        border-top-width: 4px !important;
+      }
+      /* Unique testimonial card shapes */
+      .testimonial-1 {
+        border-radius: 20px 5px 20px 5px;
+      }
+      .testimonial-2 {
+        border-radius: 5px 20px 5px 20px;
+      }
+      .testimonial-3 {
+        border-radius: 20px 20px 5px 5px;
+      }
+      .testimonial-4 {
+        border-radius: 5px 5px 20px 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <header class="border-b border-gray-200">
+      <nav
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            alt="KUMON Pondok Mutiara logo in blue with text"
+            class="h-10 w-auto"
+            src="Gambar/kumon.pondok.mutiara.biru.png"
+            width="120"
+          />
+        </div>
+        <ul class="hidden md:flex space-x-10 text-sm font-normal">
+          <li>
+            <a
+              class="text-[#14B8FF] border-b-2 border-[#14B8FF] pb-1"
+              href="index.html"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="program.html"> Program </a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pencapaian.html">
+              Pencapaian
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pendaftaran.html">
+              Informasi pendaftaran
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-10 pb-20">
+      <section
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-20"
+      >
+        <div class="md:w-1/2">
+          <h2
+            class="text-2xl sm:text-3xl font-extrabold text-[#14B8FF] mb-2 wavy-underline"
+          >
+            Apa itu KUMON?
+          </h2>
+          <p class="text-base leading-relaxed font-bold max-w-xl mt-2">
+            Kumon adalah metode pembelajaran yang dirancang untuk mengikuti
+            kemampuan masing-masing anak. Setiap anak diberikan lembar kerja
+            yang sesuai dengan tingkat kemampuannya. Hal ini membantu membentuk
+            ketangkasan, pemahaman, dan kemampuan belajar secara bertahap dan
+            efektif.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end relative">
+          <img
+            alt="Young girl in turquoise sleeveless shirt writing on a notebook with yellow stars and blue abstract shape background"
+            class="w-56 sm:w-72 md:w-80"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/e09e94b8-a208-4d6c-0c54-6cfefe4304ef.jpg"
+            width="280"
+          />
+          <svg
+            class="absolute top-2 right-10 w-12 h-12 text-yellow-400"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            />
+          </svg>
+          <svg
+            class="absolute top-6 right-4 w-6 h-6 text-yellow-400"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="5" />
+          </svg>
+          <svg
+            class="absolute top-14 right-0 w-8 h-8 text-yellow-400"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <polygon
+              points="12,2 15,11 24,11 17,16 20,24 12,19 4,24 7,16 0,11 9,11"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="mt-20 text-center max-w-3xl mx-auto">
+        <h3
+          class="text-xl sm:text-2xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
+        >
+          Metode Pembelajaran
+        </h3>
+        <p class="text-sm font-bold leading-relaxed mt-2">
+          Kumon menggunakan metode pembelajaran yang unik dan telah terbukti
+          efektif selama lebih dari 60 tahun di seluruh dunia.
+        </p>
+      </section>
+      <section
+        class="mt-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <div
+          class="border border-blue-500 border-t-4 rounded-lg p-5 card-top-border"
+        >
+          <div class="flex items-center mb-3">
+            <div class="bg-blue-200 text-blue-500 rounded-full p-3 mr-3">
+              <i class="fas fa-user fa-lg"> </i>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Pembelajaran Individual</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold leading-relaxed">
+            Setiap anak belajar sesuai kemampuan dan kecepatannya, bukan usia
+            atau kelas.
+          </p>
+        </div>
+        <div
+          class="border border-yellow-300 border-t-4 rounded-lg p-5 card-top-border"
+        >
+          <div class="flex items-center mb-3">
+            <div class="text-yellow-400 bg-yellow-100 rounded-full p-3 mr-3">
+              <i class="fas fa-book fa-lg"> </i>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Lembar Kerja Sistematis</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold leading-relaxed">
+            Materi disusun dalam lembar kerja sistematis dengan tingkat
+            kesulitan yang meningkat secara bertahap.
+          </p>
+        </div>
+        <div
+          class="border border-blue-500 border-t-4 rounded-lg p-5 max-w-md mx-auto md:mx-0 card-top-border"
+        >
+          <div class="flex items-center mb-3">
+            <div class="bg-blue-200 text-blue-500 rounded-full p-3 mr-3">
+              <i class="fas fa-clock fa-lg"> </i>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Latihan Rutin</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold leading-relaxed">
+            Anak-anak mengerjakan lembar kerja setiap harinya untuk melatih
+            konsistensi belajar
+          </p>
+        </div>
+      </section>
+      <section class="mt-20 max-w-4xl mx-auto text-center">
+        <h3
+          class="text-xl sm:text-2xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
+        >
+          Testimoni
+        </h3>
+        <p class="text-sm font-bold leading-relaxed max-w-md mx-auto mt-2">
+          Respon orang tua tentang perubahan yang mereka lihat pada anak-anak
+          mereka setelah belajar di Kumon Pondok Mutiara.
+        </p>
+      </section>
+      <section
+        class="mt-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8"
+      >
+        <div
+          class="bg-blue-200 rounded-lg p-6 text-left italic relative testimonial-1"
+        >
+          <div class="text-blue-400 text-2xl leading-none mb-3 select-none">
+            ❝
+          </div>
+          <p class="mb-6 text-sm leading-relaxed font-bold">
+            Alhamdulillah semenjak anak saya Daffa les di KUMON, sudah lumayan
+            tanggap dengan pelajaran, biasanya tidak bisa mengerjakan sama
+            sekali. Sekarang si Daffa sering juga cerita, padahal yang
+            sebelumnya jarang cerita.
+          </p>
+          <div class="flex items-center space-x-3">
+            <img
+              alt="Avatar of Mama Daffa, a woman with hijab and glasses"
+              class="rounded-full w-10 h-10"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/8a7223a6-fe44-4471-c638-4331624ea889.jpg"
+              width="40"
+            />
+            <div>
+              <p class="font-bold text-xs">Mama Daffa</p>
+              <p class="text-[10px] font-bold">Respon dari ibunda Daffa</p>
+              <div class="text-yellow-400 text-xs mt-1">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-yellow-100 rounded-lg p-6 text-left italic relative testimonial-2"
+        >
+          <div class="text-yellow-400 text-2xl leading-none mb-3 select-none">
+            ❝
+          </div>
+          <p class="mb-6 text-sm leading-relaxed font-bold">
+            Saya masukan Alya ke KUMON karena Alya senang matematika dan tekun.
+            Ternyata benar, perkembangan matematika Alya luar biasa. Mendapatkan
+            penghargaan medali emas di olimpiade.
+          </p>
+          <div class="flex items-center space-x-3">
+            <div class="rounded-full w-10 h-10 bg-gray-300"></div>
+            <div>
+              <p class="font-bold text-xs">Orang tua Alya</p>
+              <p class="text-[10px] font-bold">Pendapat dari orang tua Alya</p>
+              <div class="text-yellow-400 text-xs mt-1">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-yellow-100 rounded-lg p-6 text-left italic relative testimonial-3"
+        >
+          <div class="text-yellow-400 text-2xl leading-none mb-3 select-none">
+            ❝
+          </div>
+          <p class="mb-6 text-sm leading-relaxed font-bold">
+            Alhamdulillah semenjak saya les kan di KUMON pelajaran lancar terus
+            tanpa remidi. KUMON keren ya pengaruhnya besar di akademik.
+            Terimakasih atas bimbingannya.
+          </p>
+          <div class="flex items-center space-x-3">
+            <img
+              alt="Avatar of Mama Hisyam, a woman with hijab and glasses"
+              class="rounded-full w-10 h-10"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/ddefbb0d-f2f4-4c1c-583a-902b7acfc49a.jpg"
+              width="40"
+            />
+            <div>
+              <p class="font-bold text-xs">Mama Hisyam</p>
+              <p class="text-[10px] font-bold">
+                Lorem ipsum is simply dummy text of.
+              </p>
+              <div class="text-yellow-400 text-xs mt-1">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-blue-200 rounded-lg p-6 text-left italic relative testimonial-4"
+        >
+          <div class="text-blue-400 text-2xl leading-none mb-3 select-none">
+            ❝
+          </div>
+          <p class="mb-6 text-sm leading-relaxed font-bold">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <div class="flex items-center space-x-3">
+            <div class="rounded-full w-10 h-10 bg-gray-300"></div>
+            <div>
+              <p class="font-bold text-xs">Name</p>
+              <p class="text-[10px] font-bold">
+                Lorem ipsum is simply dummy text of.
+              </p>
+              <div class="text-yellow-400 text-xs mt-1">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#7CC6FF] rounded-t-[40px] pt-10 pb-16 px-6 sm:px-10 md:px-16 text-white"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div class="md:col-span-2 space-y-3">
+          <img
+            alt="KUMON logo white"
+            class="h-10 w-auto"
+            height="40"
+            src="Gambar/kumon.pondok.mutiara.putih.png"
+            width="120"
+          />
+          <p class="text-xs font-bold max-w-xs">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Program</p>
+          <ul class="text-xs space-y-1 font-bold">
+            <li>Matematika</li>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Kontak</p>
+          <ul class="text-xs space-y-1 font-bold">
+            <li>WhatsAPP</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Lokasi</p>
+          <ul class="text-xs space-y-1 font-bold">
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

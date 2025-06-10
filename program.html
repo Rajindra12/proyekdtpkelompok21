@@ -1,0 +1,386 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Kumon Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      /* Custom wavy underline from index.html */
+      .wavy-underline {
+        position: relative;
+        display: inline-block; /* Penting untuk ::after positioning */
+        padding-bottom: 8px; /* Ruang untuk gelombang */
+      }
+      .wavy-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0; /* Posisi di bawah padding-bottom */
+        width: 100%;
+        height: 8px; /* Tinggi gelombang */
+        background: url('data:image/svg+xml;utf8,<svg width="100" height="8" viewBox="0 0 100 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 4C10 0 20 8 30 4C40 0 50 8 60 4C70 0 80 8 90 4C100 0 110 8 120 4" stroke="%23FFD600" stroke-width="4"/></svg>')
+          repeat-x bottom;
+        background-size: 30px 8px;
+        pointer-events: none;
+        /* z-index: -1; Dihapus agar sama dengan index.html, position:relative pada parent (h3) sudah cukup */
+      }
+      .star-yellow {
+        color: #ffd600;
+      }
+      .star-orange {
+        color: #fb923c;
+      }
+      .moon-yellow {
+        color: #fef3c7;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <header class="border-b border-gray-200">
+      <nav
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            alt="KUMON Pondok Mutiara logo"
+            class="h-10 w-auto"
+            src="Gambar/kumon.pondok.mutiara.biru.png"
+            width="120"
+            height="40"
+          />
+        </div>
+        <ul class="hidden md:flex space-x-10 text-sm font-normal">
+          <li>
+            <a class="hover:text-[#14B8FF]" href="index.html">Home</a>
+          </li>
+          <li>
+            <a
+              class="text-[#14B8FF] border-b-2 border-[#14B8FF] pb-1"
+              href="program.html"
+              aria-current="page"
+            >
+              Program
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pencapaian.html"
+              >Pencapaian</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pendaftaran.html"
+              >Informasi pendaftaran</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="relative bg-[#14B8FF] pt-12 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex flex-col md:flex-row items-center md:items-start justify-between pb-20 md:pb-28"
+      >
+        <div class="text-white max-w-xs md:max-w-md z-10">
+          <h2 class="font-bold text-lg md:text-xl mb-2">Program kami</h2>
+          <p
+            class="text-sm md:text-base flex items-center space-x-1 cursor-pointer font-semibold"
+          >
+            <span>Baca selengkapnya</span>
+            <i class="fas fa-arrow-down"></i>
+          </p>
+        </div>
+        <div
+          class="relative w-48 h-56 md:w-56 md:h-72 mt-8 md:mt-0 z-10"
+          aria-label="Girl wearing glasses pointing up with her right index finger holding a yellow folder, surrounded by yellow and white star illustrations"
+        >
+          <img
+            src="https://storage.googleapis.com/a1aa/image/e240059e-9c9a-41c2-5855-243b145516db.jpg"
+            alt="Girl wearing glasses pointing up with folder"
+            class="absolute bottom-0 right-0 object-contain w-full h-full"
+            width="224"
+            height="288"
+          />
+          <svg
+            class="absolute top-0 -right-5 w-10 h-10 text-white"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 .5l2.939 5.455 6.572.955-4.756 4.635 1.123 6.545z"
+            ></path>
+          </svg>
+          <svg
+            class="absolute top-1/4 -left-5 w-8 h-8 text-yellow-300"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 .5l2.939 5.455 6.572.955-4.756 4.635 1.123 6.545z"
+            ></path>
+          </svg>
+          <svg
+            class="absolute bottom-1/4 -right-8 w-12 h-12 text-yellow-300"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 .5l2.939 5.455 6.572.955-4.756 4.635 1.123 6.545z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full leading-none"
+        style="transform: translateY(1px)"
+      >
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          class="block w-full"
+          fill="#FFFFFF"
+        >
+          <path d="M0,80 Q360,0 720,30 T1440,10 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <main
+      class="bg-white max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-10 pb-20 space-y-20 md:space-y-32"
+    >
+      <section
+        class="flex flex-col md:flex-row md:justify-between items-center md:items-start"
+        aria-labelledby="matematika-title"
+      >
+        <div
+          class="relative w-64 h-56 md:w-72 md:h-64 rounded-xl overflow-hidden flex-shrink-0 order-1 md:order-none mb-6 md:mb-0"
+        >
+          <img
+            src="https://storage.googleapis.com/a1aa/image/9068f828-47aa-4312-0c0e-00044a3d8d5b.jpg"
+            alt="Anak-anak belajar Matematika di Kumon"
+            class="object-cover w-full h-full"
+            width="288"
+            height="256"
+          />
+          <span
+            class="star-yellow absolute top-4 left-6 text-2xl select-none"
+            aria-hidden="true"
+            >★</span
+          >
+          <span
+            class="star-orange absolute top-10 left-20 text-xl select-none opacity-75"
+            aria-hidden="true"
+            >★</span
+          >
+          <span
+            class="star-yellow absolute bottom-6 right-10 text-xl select-none"
+            aria-hidden="true"
+            >★</span
+          >
+        </div>
+        <div class="max-w-xl order-2 md:order-none text-center md:text-left">
+          {/* Perubahan kelas pada H3 di sini */}
+          <h3
+            id="matematika-title"
+            class="text-2xl sm:text-3xl font-extrabold text-[#14B8FF] mb-2 wavy-underline"
+          >
+            Matematika
+          </h3>
+          <p class="text-sm font-bold leading-relaxed mb-6 mt-2">
+            Melalui level demi levelnya yang ringkas dan small step, kumon
+            matematika mengasah kemampuan numerasi anak. Bukan sekedar
+            keterampilan berhitung tapi juga membentuk kemampuan analisis
+            matematis dan berpikir logis.
+          </p>
+          <button
+            type="button"
+            class="bg-[#FFD600] text-black text-sm font-semibold px-6 py-2 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          >
+            <span>Pendaftaran</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col md:flex-row-reverse md:justify-between items-center md:items-start"
+        aria-labelledby="bahasa-indonesia-title"
+      >
+        <div
+          class="relative w-full md:max-w-md order-1 md:order-none mb-6 md:mb-0"
+        >
+          <div
+            class="relative w-72 h-56 md:w-full md:h-64 rounded-xl overflow-hidden mx-auto"
+          >
+            <img
+              src="https://storage.googleapis.com/a1aa/image/345282f8-3495-4510-4661-4c682540190f.jpg"
+              alt="Anak belajar Bahasa Indonesia di Kumon"
+              class="object-cover w-full h-full"
+              width="384"
+              height="256"
+            />
+            <span
+              class="star-yellow absolute top-6 left-4 text-2xl select-none"
+              aria-hidden="true"
+              >★</span
+            >
+            <span
+              class="moon-yellow absolute top-10 right-6 text-3xl select-none opacity-75"
+              aria-hidden="true"
+              >🌙</span
+            >
+            <span
+              class="star-orange absolute bottom-6 right-10 text-xl select-none"
+              aria-hidden="true"
+              >★</span
+            >
+          </div>
+        </div>
+        <div class="max-w-xl order-2 md:order-none text-center md:text-left">
+          {/* Perubahan kelas pada H3 di sini */}
+          <h3
+            id="bahasa-indonesia-title"
+            class="text-2xl sm:text-3xl font-extrabold text-[#14B8FF] mb-2 wavy-underline"
+          >
+            Bahasa Indonesia
+          </h3>
+          <p class="text-sm font-bold leading-relaxed mb-6 mt-2">
+            Ada banyak bacaan di kumon bahasa indonesia, dengan berbagai genre.
+            Dengan memperbaiki kecepatan dan ketepatan membaca, akan
+            meningkatkan kemampuan pemahaman bacaan/ literasi anak. Kemampuan
+            literasi yang baik akan membantu perjalanan akademik anak ke
+            depannya.
+          </p>
+          <button
+            type="button"
+            class="bg-[#FFD600] text-black text-sm font-semibold px-6 py-2 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          >
+            <span>Pendaftaran</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col md:flex-row md:justify-between items-center md:items-start"
+        aria-labelledby="bahasa-inggris-title"
+      >
+        <div
+          class="relative w-64 h-56 md:w-72 md:h-64 rounded-xl overflow-hidden flex-shrink-0 order-1 md:order-none mb-6 md:mb-0"
+        >
+          <img
+            src="https://storage.googleapis.com/a1aa/image/f235734f-b12d-439f-587a-0520c40dd98b.jpg"
+            alt="Anak belajar Bahasa Inggris di Kumon"
+            class="object-cover w-full h-full"
+            width="384"
+            height="256"
+          />
+          <span
+            class="star-yellow absolute top-6 left-6 text-2xl select-none"
+            aria-hidden="true"
+            >★</span
+          >
+          <span
+            class="star-orange absolute top-14 right-10 text-xl select-none opacity-75"
+            aria-hidden="true"
+            >★</span
+          >
+          <span
+            class="star-yellow absolute bottom-10 right-20 text-xl select-none"
+            aria-hidden="true"
+            >★</span
+          >
+        </div>
+        <div class="max-w-xl order-2 md:order-none text-center md:text-left">
+          {/* Perubahan kelas pada H3 di sini */}
+          <h3
+            id="bahasa-inggris-title"
+            class="text-2xl sm:text-3xl font-extrabold text-[#14B8FF] mb-2 wavy-underline"
+          >
+            Bahasa Inggris
+          </h3>
+          <p class="text-sm font-bold leading-relaxed mb-6 mt-2">
+            Kumon Bahasa Inggris menggunakan metode belajar audio dan textbook
+            dengan fitur read aloud di setiap level. Metode ini tidak hanya
+            melatih literasi, tetapi juga kemampuan listening dan pelafalan.
+            Literasi yang baik membuka akses ke pengetahuan dan meningkatkan
+            kemampuan berpikir kritis.
+          </p>
+          <button
+            type="button"
+            class="bg-[#FFD600] text-black text-sm font-semibold px-6 py-2 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          >
+            <span>Pendaftaran</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative bg-[#7CC6FF] text-white">
+      <div
+        class="absolute top-0 left-0 w-full overflow-hidden leading-none z-0"
+        style="height: 80px; transform: translateY(1px)"
+      >
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          class="block w-full h-full"
+          fill="#7CC6FF"
+        >
+          <path d="M0,70 C350,5 1090,5 1440,70 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-[70px] md:pt-[90px] pb-10"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+          <div class="md:col-span-2 space-y-3">
+            <img
+              alt="KUMON logo white"
+              class="h-10 w-auto"
+              height="40"
+              src="Gambar/kumon.pondok.mutiara.putih.png"
+              width="120"
+            />
+            <p class="text-xs font-bold max-w-xs">
+              Lorem Ipsum is simply dummy text of the printing.
+            </p>
+          </div>
+          <div>
+            <p class="font-bold text-sm mb-3">Program</p>
+            <ul class="text-xs space-y-1 font-bold">
+              <li>Matematika</li>
+              <li>Bahasa Indonesia</li>
+              <li>Bahasa Inggris</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-sm mb-3">Kontak</p>
+            <ul class="text-xs space-y-1 font-bold">
+              <li>WhatsAPP</li>
+              <li>Instagram</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-sm mb-3">Lokasi</p>
+            <ul class="text-xs space-y-1 font-bold">
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
