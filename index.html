@@ -6,7 +6,7 @@
     <title>Kumon Pondok Mutiara</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -52,13 +52,13 @@
     </style>
   </head>
   <body class="bg-white text-black">
-    <header class="border-b border-gray-200">
+    <header class="border-b border-gray-200 sticky top-0 bg-white z-50">
       <nav
         class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
       >
         <div class="flex items-center space-x-2">
           <img
-            alt="KUMON Pondok Mutiara logo in blue with text"
+            alt="KUMON Pondok Mutiara logo"
             class="h-10 w-auto"
             src="Gambar/kumon_pondok_mutiara_biru.png"
             width="120"
@@ -87,19 +87,66 @@
             </a>
           </li>
         </ul>
+        <div class="md:hidden">
+          <button id="hamburger-btn" class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
+
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-white shadow-md border-b border-gray-200"
+    >
+      <a
+        href="index.html"
+        class="block py-2 px-8 text-sm text-[#14B8FF] font-bold bg-blue-50"
+        >Home</a
+      >
+      <a
+        href="program.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Program</a
+      >
+      <a
+        href="pencapaian.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Pencapaian</a
+      >
+      <a
+        href="pendaftaran.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Informasi pendaftaran</a
+      >
+    </div>
+
     <main class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-10 pb-20">
       <section
         class="flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-20"
       >
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 text-center md:text-left">
           <h1
-            class="text-4xl sm:text-5xl font-extrabold text-[#14B8FF] mb-2 wavy-underline"
+            class="text-4xl sm:text-5xl font-extrabold text-[#14B8FF] mb-2 wavy-underline inline-block"
           >
             Apa itu KUMON?
           </h1>
-          <p class="text-base leading-relaxed font-bold max-w-xl mt-4">
+          <p
+            class="text-base leading-relaxed font-bold max-w-xl mt-4 mx-auto md:mx-0"
+          >
             Kumon adalah metode pembelajaran yang dirancang untuk mengikuti
             kemampuan masing-masing anak. Setiap anak diberikan lembar kerja
             yang sesuai dengan tingkat kemampuannya. Hal ini membantu membentuk
@@ -107,7 +154,9 @@
             efektif.
           </p>
         </div>
-        <div class="md:w-1/2 flex justify-center md:justify-end relative">
+        <div
+          class="md:w-1/2 flex justify-center md:justify-end relative mt-8 md:mt-0"
+        >
           <img
             alt="Anak perempuan sedang belajar dengan metode Kumon"
             class="w-full max-w-sm"
@@ -315,7 +364,7 @@
               alt="Avatar of Mama Daffa"
               class="rounded-full w-10 h-10 object-cover"
               height="40"
-              src="Gambar\avatar_default.png"
+              src="Gambar/avatar_default.png"
               width="40"
             />
             <div>
@@ -342,13 +391,13 @@
               alt="Avatar of Orang tua Alya"
               class="rounded-full w-10 h-10 object-cover"
               height="40"
-              src="Gambar\avatar_default.png"
+              src="Gambar/avatar_default.png"
               width="40"
             />
             <div>
               <p class="font-bold text-sm">Orang tua Alya</p>
               <p class="text-xs font-bold text-gray-600">
-                Respon dari orang tua Alya
+                Pendapat dari orang tua Alya
               </p>
             </div>
           </div>
@@ -369,7 +418,7 @@
               alt="Avatar of Mama Hisyam"
               class="rounded-full w-10 h-10 object-cover"
               height="40"
-              src="Gambar\avatar_default.png"
+              src="Gambar/avatar_default.png"
               width="40"
             />
             <div>
@@ -381,26 +430,29 @@
           </div>
         </div>
         <div
-        class="bg-blue-200 rounded-lg p-6 text-left italic relative testimonial-4"
+          class="bg-blue-200 rounded-lg p-6 text-left italic relative testimonial-4"
         >
-        <div class="text-blue-400 text-2xl leading-none mb-3 select-none">
-          ❝
-        </div>
-        <p class="mb-6 text-sm leading-relaxed font-bold">
-          Abi memulai belajarnya di kumon dari pengenalan kosa kata. Sekarang abi sudah sampai membaca kalimat dan cerita pendek. Senang melihat Abi jadi excited membaca dan bercerita.
-        </p>
-        <div class="flex items-center space-x-3">
+          <div class="text-blue-400 text-2xl leading-none mb-3 select-none">
+            ❝
+          </div>
+          <p class="mb-6 text-sm leading-relaxed font-bold">
+            Abi memulai belajarnya di kumon dari pengenalan kosa kata. Sekarang
+            abi sudah sampai membaca kalimat dan cerita pendek. Senang melihat
+            Abi jadi excited membaca dan bercerita.
+          </p>
+          <div class="flex items-center space-x-3">
             <img
-              alt="Avatar of Mama Hisyam"
+              alt="Avatar of Orang Tua Abi"
               class="rounded-full w-10 h-10 object-cover"
               height="40"
-              src="Gambar\avatar_default.png"
+              src="Gambar/avatar_default.png"
               width="40"
             />
             <div>
-            <div>
               <p class="font-bold text-sm">Orang Tua Abi</p>
-              <p class="text-xs font-bold text-gray-600">Respon dari Orang Tua Abi</p>
+              <p class="text-xs font-bold text-gray-600">
+                Respon dari Orang Tua Abi
+              </p>
             </div>
           </div>
         </div>
@@ -425,27 +477,89 @@
         <div>
           <p class="font-bold text-sm mb-3">Program</p>
           <ul class="text-xs space-y-1 font-bold">
-            <li><a href="program.html#matematika-title" class="hover:underline">Matematika</a></li>
-            <li><a href="program.html#bahasa-indonesia-title" class="hover:underline">Bahasa Indonesia</a></li>
-            <li><a href="program.html#bahasa-inggris-title" class="hover:underline">Bahasa Inggris</a></li>
+            <li>
+              <a href="program.html#matematika-title" class="hover:underline"
+                >Matematika</a
+              >
+            </li>
+            <li>
+              <a
+                href="program.html#bahasa-indonesia-title"
+                class="hover:underline"
+                >Bahasa Indonesia</a
+              >
+            </li>
+            <li>
+              <a
+                href="program.html#bahasa-inggris-title"
+                class="hover:underline"
+                >Bahasa Inggris</a
+              >
+            </li>
           </ul>
         </div>
         <div>
           <p class="font-bold text-sm mb-3">Kontak</p>
           <ul class="text-xs space-y-1 font-bold">
-            <li><a href="https://wa.me/6285103900345" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/kumonpondokmutiara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:underline">Instagram</a></li>
-            <li><a href="https://www.facebook.com/p/KUMON-Pondok-Mutiara-Sidoarjo-100054442902859/" target="_blank" rel="noopener noreferrer" class="hover:underline">Facebook</a></li>
-            <li><a href="https://www.tiktok.com/@kumon.pondok.mutiara?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="hover:underline">TikTok</a></li>
+            <li>
+              <a
+                href="https://wa.me/6285103900345"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/kumonpondokmutiara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/p/KUMON-Pondok-Mutiara-Sidoarjo-100054442902859/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@kumon.pondok.mutiara?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >TikTok</a
+              >
+            </li>
           </ul>
         </div>
         <div>
           <p class="font-bold text-sm mb-3">Lokasi</p>
-          <a href="https://www.google.com/maps/place/KUMON+PONDOK+MUTIARA+SIDOARJO/data=!4m2!3m1!1s0x0:0x434c9f333fcd4c6a?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" class="text-xs font-bold hover:underline leading-relaxed">
-            🏫Perumahan Pondok Mutiara Blok MEL No. 8-9, Banjarbendo, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61225
+          <a
+            href="https://www.google.com/maps/place/KUMON+PONDOK+MUTIARA+SIDOARJO/data=!4m2!3m1!1s0x0:0x434c9f333fcd4c6a?sa=X&ved=1t:2428&ictx=111"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-bold hover:underline leading-relaxed"
+          >
+            🏫 Perumahan Pondok Mutiara Blok MEL No. 8-9, Banjarbendo, Kec.
+            Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61225
           </a>
         </div>
       </div>
     </footer>
+    <script>
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

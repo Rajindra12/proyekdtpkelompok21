@@ -37,7 +37,7 @@
     </style>
   </head>
   <body class="bg-white text-black">
-    <header class="border-b border-gray-200">
+    <header class="border-b border-gray-200 sticky top-0 bg-white z-50">
       <nav
         class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
       >
@@ -72,18 +72,62 @@
             </a>
           </li>
         </ul>
+        <div class="md:hidden">
+          <button id="hamburger-btn" class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
+
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-white shadow-md border-b border-gray-200"
+    >
+      <a
+        href="index.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Home</a
+      >
+      <a
+        href="program.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Program</a
+      >
+      <a
+        href="pencapaian.html"
+        class="block py-2 px-8 text-sm text-gray-700 hover:text-[#14B8FF] hover:bg-gray-50"
+        >Pencapaian</a
+      >
+      <a
+        href="pendaftaran.html"
+        class="block py-2 px-8 text-sm text-[#14B8FF] font-bold bg-blue-50"
+        >Informasi pendaftaran</a
+      >
+    </div>
 
     <section class="relative bg-[#7CC6FF] text-white pt-12 overflow-hidden">
       <div
         class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex flex-col md:flex-row items-center justify-between pb-20 md:pb-28"
       >
         <div class="md:w-1/2 text-center md:text-left z-10 mb-8 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Informasi Pendaftaran
           </h1>
-          <p class="text-xl mb-6">
+          <p class="text-lg md:text-xl mb-6">
             Bergabunglah dengan program Kumon untuk mengembangkan potensi anak
             Anda.
           </p>
@@ -94,14 +138,14 @@
             Lihat Program
           </a>
         </div>
-        <div class="md:w-1/2 flex justify-center md:justify-end">
-          <div class="relative w-full max-w-xs h-72">
-            <img
-              src="Gambar/hero_pendaftaran.png"
-              alt="Anak laki-laki tersenyum"
-              class="absolute bottom-0 right-0 w-full h-full object-contain"
-            />
-          </div>
+        <div
+          class="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0"
+        >
+          <img
+            src="Gambar/hero_pendaftaran.png"
+            alt="Anak laki-laki tersenyum"
+            class="h-72 object-contain"
+          />
         </div>
       </div>
       <div
@@ -138,8 +182,9 @@
             <h3 class="text-2xl font-bold mb-8 text-center text-black">
               Pilih Program Kumon
             </h3>
+
             <div
-              class="border-2 border-blue-500 rounded-lg p-6 mb-6 transition-shadow"
+              class="border-2 border-blue-500 rounded-lg p-6 mb-6 hover:shadow-xl transition-shadow"
             >
               <div class="flex items-start mb-4">
                 <div class="bg-blue-200 p-3 rounded-lg text-blue-500 mr-4">
@@ -175,8 +220,9 @@
                 </div>
               </div>
             </div>
+
             <div
-              class="border-2 border-yellow-400 rounded-lg p-6 transition-shadow"
+              class="border-2 border-yellow-400 rounded-lg p-6 hover:shadow-xl transition-shadow"
             >
               <div class="flex items-start mb-4">
                 <div class="bg-yellow-100 p-3 rounded-lg text-yellow-500 mr-4">
@@ -240,6 +286,7 @@
           </div>
         </div>
       </section>
+
       <section id="harga" class="py-16">
         <div class="max-w-4xl mx-auto text-center">
           <h2
@@ -270,7 +317,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div
-              class="bg-white border-2 border-blue-500 rounded-lg p-8 transition-shadow text-center"
+              class="bg-white border-2 border-blue-500 rounded-lg p-8 hover:shadow-xl transition-shadow text-center"
             >
               <h4 class="text-xl font-bold mb-2 text-black">
                 Biaya SPP per Bulan
@@ -284,7 +331,7 @@
             </div>
 
             <div
-              class="bg-white border-2 border-blue-500 rounded-lg p-8 transition-shadow text-center"
+              class="bg-white border-2 border-blue-500 rounded-lg p-8 hover:shadow-xl transition-shadow text-center"
             >
               <h4 class="text-xl font-bold mb-2 text-black">
                 Biaya SPP per Bulan
@@ -458,5 +505,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
