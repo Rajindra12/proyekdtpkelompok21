@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumon - Pencapaian Siswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      .wavy-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      .wavy-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        background: url('data:image/svg+xml;utf8,<svg width="100" height="10" viewBox="0 0 100 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5 C10 0 20 10 30 5 C40 0 50 10 60 5 C70 0 80 10 90 5 C100 0 110 10 120 5" stroke="%23FFD600" stroke-width="5"/></svg>')
+          repeat-x bottom;
+        background-size: 30px 10px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <header class="border-b border-gray-200">
+      <nav
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            alt="KUMON Pondok Mutiara logo"
+            class="h-10 w-auto"
+            src="Gambar/kumon_pondok_mutiara_biru.png"
+            width="120"
+          />
+        </div>
+        <ul class="hidden md:flex space-x-10 text-sm font-normal">
+          <li>
+            <a class="hover:text-[#14B8FF]" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="program.html">Program</a>
+          </li>
+          <li>
+            <a
+              class="text-[#14B8FF] border-b-2 border-[#14B8FF] pb-1"
+              href="pencapaian.html"
+              aria-current="page"
+            >
+              Pencapaian
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#14B8FF]" href="pendaftaran.html"
+              >Informasi pendaftaran</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="relative bg-[#7CC6FF] pt-12 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 flex flex-col md:flex-row items-center justify-between pb-20 md:pb-28"
+      >
+        <div class="md:w-1/2 text-white z-10 text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Pencapaian</h1>
+          <p class="text-xl mb-6">Prestasi siswa-siswi kami yang luar biasa.</p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+          <div class="relative w-full max-w-xs h-72">
+            <img
+              src="Gambar/hero_pencapaian.png"
+              alt="Siswa berprestasi Kumon"
+              class="absolute bottom-0 right-0 w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full leading-none"
+        style="transform: translateY(1px)"
+      >
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          class="block w-full"
+          fill="#FFFFFF"
+        >
+          <path d="M0,80 Q360,0 720,30 T1440,10 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 pt-10 pb-20">
+      <section class="py-16">
+        <div class="text-center">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-[#14B8FF] wavy-underline inline-block"
+          >
+            Pencapaian Program Kumon
+          </h2>
+          <p class="mt-4 text-center max-w-2xl mx-auto text-base font-bold">
+            Berikut adalah berbagai penghargaan dan pengakuan atas prestasi
+            siswa di Kumon Pondok Mutiara.
+          </p>
+        </div>
+        <div
+          class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left font-bold"
+        >
+          <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-award text-blue-500 text-3xl mr-4"></i>
+              <h3 class="text-lg text-gray-800">Award for Excellence</h3>
+            </div>
+            <p class="text-sm text-gray-700 font-normal">
+              Mendapatkan Award for Excellence sebagai penghargaan atas komitmen
+              dan dedikasi dalam menyelesaikan program Kumon hingga level
+              tertentu.
+            </p>
+          </div>
+          <div class="bg-yellow-100 p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-lightbulb text-yellow-500 text-3xl mr-4"></i>
+              <h3 class="text-lg text-gray-800">
+                Kontributor Innovation Bulletin
+              </h3>
+            </div>
+            <p class="text-sm text-gray-700 font-normal">
+              Berpartisipasi dalam Innovation Bulletin, di mana siswa berbagi
+              pengalaman dan wawasan mereka untuk menginspirasi teman-teman
+              lainnya.
+            </p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-3">
+              <i class="fas fa-bullhorn text-blue-500 text-3xl mr-4"></i>
+              <h3 class="text-lg text-gray-800">
+                Penyumbang Innovation Bulletin
+              </h3>
+            </div>
+            <p class="text-sm text-gray-700 font-normal">
+              Memberikan tulisan untuk Innovation Bulletin, sebuah buletin yang
+              memuat pengalaman dan tips belajar dari siswa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="text-center">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-[#14B8FF] wavy-underline inline-block"
+          >
+            Siswa Completer
+          </h2>
+          <p class="mt-4 text-center max-w-2xl mx-auto text-base font-bold">
+            Daftar siswa yang berhasil menyelesaikan program Kumon hingga level
+            akhir, menunjukkan dedikasi dan ketekunan yang luar biasa.
+          </p>
+        </div>
+
+        <div
+          class="mt-10 max-w-2xl mx-auto bg-[#14B8FF] text-white p-6 rounded-lg flex items-center justify-center gap-4 shadow-lg"
+        >
+          <i class="fas fa-graduation-cap text-4xl"></i>
+          <div>
+            <h3 class="text-2xl font-bold">Data per Juni 2025</h3>
+            <p class="font-semibold">
+              Di bawah ini adalah nama-nama siswa completer kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="font-bold text-xl text-center mb-4 text-blue-700">
+              Completer Matematika
+            </h3>
+            <ol class="space-y-3 font-semibold text-gray-800">
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >1</span
+                >Christabel Aiko P.
+              </li>
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >2</span
+                >Gwen Aiko P.
+              </li>
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >3</span
+                >Leeon
+              </li>
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >4</span
+                >Andre Subianto C.
+              </li>
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >5</span
+                >Grace Major Angelica
+              </li>
+              <li class="bg-blue-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >6</span
+                >Ignatius Radithya
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl text-center mb-4 text-yellow-600">
+              Completer Bahasa Inggris
+            </h3>
+            <ol class="space-y-3 font-semibold text-gray-800">
+              <li class="bg-yellow-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >1</span
+                >Valerie Natalie
+              </li>
+              <li class="bg-yellow-100 p-3 rounded-md shadow flex items-center">
+                <span
+                  class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 font-bold text-sm flex-shrink-0"
+                  >2</span
+                >Vania Natalie
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div
+          class="max-w-4xl mx-auto bg-blue-100 rounded-lg p-8 shadow-lg flex flex-col md:flex-row items-center gap-6"
+        >
+          <i
+            class="fas fa-trophy text-blue-500 text-5xl mb-4 md:mb-0 md:mr-6"
+          ></i>
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-bold text-blue-800">
+              Pencapaian Luar Biasa
+            </h3>
+            <p class="mt-2 text-gray-700 font-bold">
+              Menyelesaikan program Kumon hingga level J dan O adalah prestasi
+              istimewa yang menunjukkan kemampuan siswa setara dengan anak-anak
+              tingkat universitas atau bahkan di atasnya.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-[#7CC6FF] rounded-t-[40px] pt-10 pb-16 px-6 sm:px-10 md:px-16 text-white"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div class="md:col-span-2 space-y-3">
+          <img
+            alt="KUMON logo white"
+            class="h-10 w-auto"
+            height="40"
+            src="Gambar/kumon_pondok_mutiara_putih.png"
+            width="120"
+          />
+          <p class="text-xs font-bold max-w-xs">
+            Langkah Awal Menuju Masa Depan Gemilang
+          </p>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Program</p>
+          <ul class="text-xs space-y-1 font-bold">
+            <li>
+              <a href="program.html#matematika-title" class="hover:underline"
+                >Matematika</a
+              >
+            </li>
+            <li>
+              <a
+                href="program.html#bahasa-indonesia-title"
+                class="hover:underline"
+                >Bahasa Indonesia</a
+              >
+            </li>
+            <li>
+              <a
+                href="program.html#bahasa-inggris-title"
+                class="hover:underline"
+                >Bahasa Inggris</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Kontak</p>
+          <ul class="text-xs space-y-1 font-bold">
+            <li>
+              <a
+                href="https://wa.me/6285103900345"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/kumonpondokmutiara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/p/KUMON-Pondok-Mutiara-Sidoarjo-100054442902859/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@kumon.pondok.mutiara?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >TikTok</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-sm mb-3">Lokasi</p>
+          <a
+            href="https://www.google.com/maps/place/KUMON+PONDOK+MUTIARA+SIDOARJO/data=!4m2!3m1!1s0x0:0x434c9f333fcd4c6a?sa=X&ved=1t:2428&ictx=111"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-bold hover:underline leading-relaxed"
+          >
+            🏫Perumahan Pondok Mutiara Blok MEL No. 8-9, Banjarbendo, Kec.
+            Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61225
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
